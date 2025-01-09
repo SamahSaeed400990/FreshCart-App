@@ -12,7 +12,7 @@ export default function Products( ) {
     let[products,setProducts] = useState([])
     let[loading,setLoading] = useState(true)
 
-    const searchedProduct = products.filter(item =>{
+    const searchedProduct = products.filter(item => {
       if(searchTerm.value === '') return item
       if(item.title.toLowerCase().includes(searchTerm.toLowerCase()))
         return item

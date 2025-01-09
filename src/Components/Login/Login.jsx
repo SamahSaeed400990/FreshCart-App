@@ -4,7 +4,7 @@ import axios from 'axios';
 import {Audio} from 'react-loader-spinner';
 import * as Yup from 'yup';
 import { Link, useNavigate } from 'react-router-dom';
- 
+ import './login.css'
 export default function Login() {
  let navigate = useNavigate()
   const [errorMsg,setErrorMsg] =useState('')
@@ -59,7 +59,7 @@ export default function Login() {
   return<>
   
   <div>
-    <div className="w-75 m-auto my-5 ">
+    <div className="w-75 m-auto my-5 mt-5 ">
        
       <form onSubmit={formik.handleSubmit} c>
       

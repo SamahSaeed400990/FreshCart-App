@@ -47,9 +47,9 @@ export default function Navbar() {
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
          
         <li className="nav-item">
-          < NavLink className="nav-link position-relative" to="/Cart">Cart
-              <i className="fa-solid fa-cart-shopping cartIcon mx-1"></i>
-              {counter ?              <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          < NavLink className="nav-link position-relative" to="/Cart">
+              <i style={{color:"#0aad0a"}} className="fa-solid fa-cart-shopping cartIcon mx-1"></i>
+              {counter ?      <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
               {counter}
                   <span className="visually-hidden">unread messages</span>
               </span> : ''}

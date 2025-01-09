@@ -2,6 +2,7 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import {  NavLink } from 'react-router-dom'
 import logo from '../Assets/images/freshcart-logo.svg'
+import Footer from '../Components/Footer/Footer'
 export default function AuthLayout() {
   return<>
   <nav className="navbar navbar-expand-lg py-3 bg-body-tertiary">
@@ -41,5 +42,6 @@ export default function AuthLayout() {
   </div>
 </nav>
   <Outlet></Outlet>
+  <Footer/>
   </>
 }

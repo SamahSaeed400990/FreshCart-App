@@ -23,6 +23,16 @@ body{
     font-family: var(--font-family) !important;
     
 }
+input:focus{
+   
+ 
+  box-shadow: none;  
+ 
+  border: 2px solid #0aad0a;  
+  border-radius: 8px;  
+  
+}
+ 
 .rating-color
 {
     color: var(--rating-color);
@@ -85,3 +95,5 @@ a , a:hover{
 .brdr{
     border: 1px solid #0aad0a;
 }
+
+ 

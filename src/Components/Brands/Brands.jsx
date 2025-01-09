@@ -2,7 +2,7 @@
 
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import Slider from "react-slick";
+ 
 import './brands.css'
 export default function Brands() {
   const [categories ,setCategories] = useState([])
