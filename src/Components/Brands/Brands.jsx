@@ -3,7 +3,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import Slider from "react-slick";
-
+import './brands.css'
 export default function Brands() {
   const [categories ,setCategories] = useState([])
   async  function getCategories(){
@@ -16,12 +16,12 @@ export default function Brands() {
     },[])
      
 return (
-  <div className="container">
+  <div  className="container">
 
-    <div className='row ' > 
+    <div className=' row brand-content ' > 
        
        
-          
+         <h2 style={{textAlign:'center' , paddingTop:"30px" , fontWeight:"500"}}> Brands</h2>
           {
             categories.map((item) =>(
               <div  style={{width:200}} >

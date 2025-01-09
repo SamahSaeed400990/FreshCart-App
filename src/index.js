@@ -11,15 +11,21 @@ import 'react-toastify/dist/ReactToastify.css';
 import './index.css';
 import {QueryClient , QueryClientProvider} from 'react-query';
 import {ReactQueryDevtools} from 'react-query/devtools'
+ 
+ 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 let quary = new QueryClient()
 root.render(
 
-    <QueryClientProvider client={quary}>
-        <App />
-        <ReactQueryDevtools />
-    </QueryClientProvider>
+   
+     
+            <QueryClientProvider client={quary}>
+                <App />
+                <ReactQueryDevtools initialIsOpen={false}/>
+            </QueryClientProvider>
+        
+    
    
     
 );

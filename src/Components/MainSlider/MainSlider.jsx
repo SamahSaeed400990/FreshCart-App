@@ -1,11 +1,11 @@
 import React from 'react';
 import Slider from "react-slick";
-import slider1 from  '../../Assets/images/slider-image-2.jpeg';
-import slider2 from '../../Assets/images/slider-2.jpeg';
+import slider1 from  '../../Assets/images/slider-image-3.jpeg';
+import slider2 from '../../Assets/images/slider-image-2.jpeg';
 import slider3 from '../../Assets/images/slider-image-1.jpeg';
-import img1 from  '../../Assets/images/grocery-banner.png'
+import img1 from  '../../Assets/images/slider-2.jpeg'
 import img2 from  '../../Assets/images/grocery-banner-2.jpeg'
-
+import './mainslider.css'
 export default function MainSlider() {
     var settings = {
         dots: false,
@@ -31,7 +31,7 @@ export default function MainSlider() {
       </div>
       <div className='col-md-3'>
         <div className="images">
-          <img src={img1} className='w-100' height={200} alt="img" />
+          <img src={img1} className='w-100 ' height={200} alt="img" />
           <img src={img2} className='w-100' height={200} alt="img" />
         </div>
       </div>

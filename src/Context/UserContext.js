@@ -1,9 +1,9 @@
 import { createContext ,useState } from "react";
 
-export let userContext = createContext()
+export let UserContext = createContext()
 export default function UserContextProvider(){
     const [userToken , setUserToken] = useState(null)
-    return <userContext.Provider value={{userToken,setUserToken}} >
+    return <UserContext.Provider value={{userToken,setUserToken}} >
 
-    </userContext.Provider>
+    </UserContext.Provider>
 }

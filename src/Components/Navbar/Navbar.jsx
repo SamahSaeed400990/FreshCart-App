@@ -1,11 +1,13 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect   } from 'react'
 import logo from '../../Assets/images/freshcart-logo.svg'
 import {  NavLink  } from 'react-router-dom'
 import { cartContext } from '../../Context/CartContext'
  
+ 
 export default function Navbar() {
   let  {counter,getCart } = useContext(cartContext)
-  // let navigate =useNavigate()
+   
+ 
   useEffect(()=>{
     (async()=>{
     let data =await  getCart()
@@ -13,7 +15,7 @@ export default function Navbar() {
      })()
   },[])
   
-  
+ 
   
   return <>
 <nav className="navbar navbar-expand-lg py-3 bg-body-tertiary">
@@ -56,11 +58,11 @@ export default function Navbar() {
         </li>
         
         <li className="nav-item">
-          < NavLink className="nav-link position-relative" to="/Logout">
+          <  span className="nav-link cursor-pointer"  >
             
             Logout
            
-          </NavLink>
+          </span>
           
         </li>
         

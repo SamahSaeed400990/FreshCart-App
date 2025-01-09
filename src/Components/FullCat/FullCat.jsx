@@ -2,7 +2,7 @@
 
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
- 
+import './fullCat.css'
 
 export default function FullCat() {
   const [categories ,setCategories] = useState([])
@@ -16,9 +16,9 @@ export default function FullCat() {
     },[])
      
 return (
-  <div className=" my-5 container">
+  <div className=" container ">
 
-    <div  className='row'> 
+    <div  className='row all-categories'> 
       <h2 style={{textAlign:'center'}}> Categories</h2>
         
           {

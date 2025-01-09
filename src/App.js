@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useEffect,useContext}from 'react';
 import './App.css';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -19,7 +19,7 @@ import { ToastContainer } from 'react-toastify';
 import FullCat from './Components/FullCat/FullCat';
 import Logout from './Components/Logout/Logout';
 import AuthLayout from './Layouts/AuthLayout';
-
+import {UserContext} from './Context/UserContext'
 let routes =createBrowserRouter([
   {path:'/', element:<MainLayout/> , children:[
     {index: true , element: <ProtectedRoutes><Home/></ProtectedRoutes>},
@@ -48,7 +48,10 @@ let routes =createBrowserRouter([
 
 function App() {
 
-  
+   
+   
+   
+ 
   return<>
 
        <CartContextProvider>

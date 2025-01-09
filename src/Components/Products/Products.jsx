@@ -17,6 +17,7 @@ export default function Products( ) {
       if(item.title.toLowerCase().includes(searchTerm.toLowerCase()))
         return item
     })
+     
    async function getProducts() {
    let {data} = await axios.get('https://ecommerce.routemisr.com/api/v1/products')
     
@@ -34,11 +35,11 @@ export default function Products( ) {
    <div className="search d-flex align-items-center justify-content-between w-50 mt-5 mb-5">
                 <input type="text" placeholder='im looking for.......' value={searchTerm}
                  onChange={e=> setSearchTerm(e.target.value)}/>
-                {/* <span><i className="ri-search-line"></i></span> */}
+                <span><i className="ri-search-line"></i></span>
               </div>
     <div className="row">
      
-      {products.map((item)=>{
+      {searchedProduct.map((item)=>{
         return <Product item={item} key={item._id}/> 
       })}
     </div>

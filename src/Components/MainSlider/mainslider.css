@@ -1,3 +1,8 @@
-*{
-    overflow: hidden;
+ 
+@media only screen and (max-width: 768px){
+     img{
+        margin-bottom: 10px;
+        
+    }
+    
 }
