@@ -32,7 +32,7 @@ export default function Register() {
     name:Yup.string().min(3 , 'name minlenght is 3').max(10 , 'name maxlenght is 10').required('name is required'),
     email:Yup.string().email('email is invalid ').required('email is required'),
      
-    password:Yup.string().matches(/^[A-Z][a-z0-9]{5,10}$/ , 'password is required'),
+    password:Yup.string().matches(/^[a-z0-9]{5,10}$/ , 'password is required'),
     rePassword:Yup.string().oneOf([Yup.ref("password")],'password and rePassword doesnt matches').required('rePassword is required'),
 
   });
@@ -57,7 +57,7 @@ export default function Register() {
   return<>
   
   <div>
-    <div className="w-75 m-auto">
+    <div className="w-75 m-auto p-5">
       <h2>Register Now</h2>
       <form onSubmit={formik.handleSubmit}>
         <label htmlFor="name">Name</label>
@@ -91,7 +91,7 @@ export default function Register() {
           
           }
           </button>
-          <Link className='ps-4' to={'/Login'}>Login</Link>
+          <Link className='ps-4' to={'/Login'}>Already have an account? Login</Link>
       </form>
     </div>
   </div>

@@ -32,11 +32,10 @@ export default function Login() {
 
   
   let  schema =new Yup.object({
-     
+
     email:Yup.string().email('email is invalid ').required('email is required'),
-     
-    password:Yup.string().matches(/^[A-Z][a-z0-9]{5,10}$/ , 'password is required'),
-     
+    password:Yup.string().matches(/^[a-z0-9]{5,10}$/ , 'password is required'),
+
   });
   return schema;
   }
@@ -88,7 +87,8 @@ export default function Login() {
           
           }
           </button>
-          <Link className='ps-3' to={'/Register'}>Register</Link>
+           
+          <Link className='ps-4' to={'/Register'}>Don't have an account? Create an account</Link>
       </form>
     </div>
   </div>

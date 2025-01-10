@@ -45,6 +45,13 @@ export default function Navbar() {
          
       </ul>
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+
+      <li className="nav-item d-flex align-items-center cursor-pointer">
+           <i className="fab fa-facebook mx-2"></i>
+           <i className="fab fa-twitter mx-2"></i>
+           <i className="fab fa-instagram mx-2"></i>
+           <i className="fab fa-youtube mx-2"></i>
+         </li>
          
         <li className="nav-item">
           < NavLink className="nav-link position-relative" to="/Cart">
@@ -57,14 +64,7 @@ export default function Navbar() {
           
         </li>
         
-        <li className="nav-item">
-          <  span className="nav-link cursor-pointer"  >
-            
-            Logout
-           
-          </span>
-          
-        </li>
+      
         
          
       </ul>
